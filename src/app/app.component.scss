@@ -27,6 +27,7 @@
     border-radius: 1em;
     margin: 2em auto;
     min-width: 425px;
+    overflow: hidden;
     padding: 1em;
     width: 50%;
 }
@@ -50,5 +51,37 @@
     }
     .instagram {
         mask: url('/assets/instagram.svg') no-repeat center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .clock {
+        .time {
+            font-size: 3em;
+        }
+    }
+    .container {
+        min-width: 405px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .clock {
+        .time {
+            font-size: 2em;
+        }
+    }
+    .container {
+        min-width: 374px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .clock {
+        flex-direction: column;
+        .time {
+            font-size: 4em;
+        }
+    }
+    .container {
+        min-width: 115px;
+        width: 70%;
     }
 }
