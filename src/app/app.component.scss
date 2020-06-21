@@ -65,16 +65,6 @@
 }
 @media screen and (max-width: 450px) {
     .clock {
-        .time {
-            font-size: 2em;
-        }
-    }
-    .container {
-        min-width: 374px;
-    }
-}
-@media screen and (max-width: 415px) {
-    .clock {
         flex-direction: column;
         .time {
             font-size: 4em;
@@ -83,5 +73,10 @@
     .container {
         min-width: 115px;
         width: 70%;
+    }
+    .month {
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #dee2e6, rgba(0, 0, 0, 0)) 100% 1;
     }
 }
